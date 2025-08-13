@@ -2,7 +2,7 @@
 
 ## Lore
 
-I spent **the entire summer** without even an *int***sh*p*.  
+I spent **the entire summer** without even an *internship*.  
 Meanwhile, my feed was flooded with people announcing their new *job*, their amazing *career* moves, and endless *opportunities*.  
 It made me sad enough to build this. Consider it part coping mechanism, part art project, part cry for help.
 
