@@ -5,7 +5,17 @@
   "description": "censorship of j**-related words on LinkedIn.",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["*://*.linkedin.com/*"],
+   "icons": {
+    "16": "jobless.png",
+    "48": "jobless.png",
+    "128": "jobless.png"
+   },
   "action": {
+    "default_icon": {
+      "16": "jobless.png",
+      "48": "jobless.png",
+      "128": "jobless.png"
+    },
     "default_popup": "poopup.html",
     "default_title": "Word Censor Toggle"
   },

@@ -2,10 +2,10 @@ chrome.storage.local.get('censorEnabled', (data) => {
   if (data.censorEnabled === false) return;
 
   const censoredWords = [
-    "job", "jobs", "employment", "career", "careers", "hiring", "hire", "hired", "recruit", "recruitment", "recruiter", "vacancy", "vacancies", "position", "positions", "opportunity", "opportunities", "intern", "interns", "internship", "internships", "opening", "openings", "role", "roles", "apply", "application", "applications", "cv", "resume", "resumes", "full-time", "full time", "part-time", "part time", "working", "workplace", "employer", "employers", "headhunt", "headhunter", "headhunting", "certificate", "certification"
+    "job", "jobs", "employment", "career", "careers", "hiring", "hire", "hired", "recruit", "recruitment", "recruiter", "vacancy", "vacancies", "position", "positions", "opportunity", "opportunities", "intern", "interns", "internship", "internships", "opening", "openings", "apply", "full-time", "full time", "part-time", "part time", "joblessplace", "employer", "employers", "headhunt", "headhunter", "headhunting", "certificate", "certification"
   ];
 
-  function lightlyCensor(word) {
+  function censor(word) {
     if (word.length <= 3) return word[0] + '*' + word[word.length - 1];
     const first = word[0];
     const last = word[word.length - 1];
@@ -29,7 +29,7 @@ chrome.storage.local.get('censorEnabled', (data) => {
       const span = document.createElement("span");
       span.className = "censored";
       span.title = match[0];
-      span.textContent = lightlyCensor(match[0]);
+      span.textContent = censor(match[0]);
       fragment.appendChild(span);
 
       lastIndex = regex.lastIndex;
@@ -41,7 +41,7 @@ chrome.storage.local.get('censorEnabled', (data) => {
     }
   }
 
-  function walkAndCensor(node) {
+  function scan(node) {
     if (
       node.nodeType === Node.TEXT_NODE &&
       node.parentNode &&
@@ -50,17 +50,17 @@ chrome.storage.local.get('censorEnabled', (data) => {
       censorTextNode(node);
     } else {
       for (let child of node.childNodes) {
-        walkAndCensor(child);
+        scan(child);
       }
     }
   }
 
-  walkAndCensor(document.body);
+  scan(document.body);
 
   const observer = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
       for (const node of mutation.addedNodes) {
-        walkAndCensor(node);
+        scan(node);
       }
     }
   });

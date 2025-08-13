@@ -11,3 +11,8 @@
   background-color: inherit;
   text-shadow: none;
 }
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
