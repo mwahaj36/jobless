@@ -21,7 +21,7 @@ It made me sad enough to build this. Consider it part coping mechanism, part art
 
 ## Installation
 
-1. Clone this repo (or don’t, I’m not your manager).  
+1. Clone this repo 
 2. Go to `chrome://extensions/` and enable **Developer Mode**.  
 3. Click **Load Unpacked** and select this folder.  
 4. Refresh LinkedIn and enjoy your new, **j*b-free** browsing experience.  
