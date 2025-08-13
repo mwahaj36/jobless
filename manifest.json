@@ -1,7 +1,7 @@
 {
-  "manifest_version": 3,
-  "name": "unemployed",
-  "version": "0.1",
+  "manifest_version": 2,
+  "name": "jobless",
+  "version": "0.2",
   "description": "censorship of j**-related words on LinkedIn.",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["*://*.linkedin.com/*"],
@@ -16,8 +16,8 @@
       "48": "jobless.png",
       "128": "jobless.png"
     },
-    "default_popup": "poopup.html",
-    "default_title": "Word Censor Toggle"
+    "default_popup": "popup.html",
+    "default_title": "Censor Toggle"
   },
   "content_scripts": [
   {
