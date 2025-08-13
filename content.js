@@ -19,7 +19,7 @@ chrome.storage.local.get('censorEnabled', (data) => {
     const fragment = document.createDocumentFragment();
     let lastIndex = 0;
 
-    const regex = new RegExp(`(${censoredWords.join("|")})`, "gi");
+    const regex = new RegExp(`\\b(${censoredWords.join("|")})\\b`, "gi");
     let match;
     while ((match = regex.exec(text)) !== null) {
       matchFound = true;
