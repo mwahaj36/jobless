@@ -1,7 +1,5 @@
 # **unemployed**
 
----
-
 ## Lore
 
 I spent **the entire summer** without even an *int***sh*p*.  
