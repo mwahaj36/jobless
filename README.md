@@ -30,7 +30,7 @@ It made me sad enough to build this. Consider it part coping mechanism, part art
 
 ## Why Does This Exist?  
 
-- Because LinkedIn is just **Facebook for succesful people.**  
+Because LinkedIn is just **Facebook for succesful people.**  
 
 ## Attribution
 <a href="https://www.flaticon.com/free-icons/unemployment" title="unemployment icons">Unemployment icons created by Freepik - Flaticon</a>
