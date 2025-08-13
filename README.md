@@ -3,12 +3,12 @@
 ## Lore
 
 I spent **the entire summer** without even an *int***sh*p*.  
-Meanwhile, my feed was flooded with people announcing their new *j*b*, their amazing *c***er* moves, and endless *opp***t**ities*.  
+Meanwhile, my feed was flooded with people announcing their new *job*, their amazing *career* moves, and endless *opportunities*.  
 It made me sad enough to build this. Consider it part coping mechanism, part art project, part cry for help.
 
 ## What It Does
 
-- Detects words like “j*b”, “int***sh*p”, “re***itment”, “oppo***t**ities”, etc.
+- Detects words like “job”, “internship”, etc.
 - Replaces the middle of the word with `*` so it’s still guessable but less… triggering.
 - Works on **dynamically loaded pages** (thanks, MutationObserver).
 - Hover shows a tooltip with the original word (if you *must* know).
