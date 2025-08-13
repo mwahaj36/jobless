@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "unemployed",
+  "version": "0.1",
+  "description": "censorship of j**-related words on LinkedIn.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["*://*.linkedin.com/*"],
+  "action": {
+    "default_popup": "poopup.html",
+    "default_title": "Word Censor Toggle"
+  },
+  "content_scripts": [
+  {
+    "matches": ["*://*.linkedin.com/*"],
+    "js": ["content.js"],
+    "css": ["style.css"], 
+    "run_at": "document_idle"
+  }
+],
+    "_comment": "too tired of being unemployed man pls get me a job or internship, this is a call for help"
+
+}

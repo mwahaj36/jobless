@@ -1,0 +1,13 @@
+.censored {
+  background-color: gray;
+  color: transparent;
+  text-shadow: 0 0 5px #fff;
+  transition: color 0.2s ease;
+  cursor: help;
+}
+
+.censored:hover {
+  color: inherit;
+  background-color: inherit;
+  text-shadow: none;
+}
