@@ -9,7 +9,7 @@ It made me sad enough to build this. Consider it part coping mechanism, part art
 ## What It Does
 
 - Detects words like “job”, “internship”, etc.
-- Replaces the middle of the word with `*` so it’s still guessable but less… triggering.
+- Replaces the middle of the word with `*` so it’s still guessable but less… triggering and blurs it as a double safety measure 
 - Works on **dynamically loaded pages** (thanks, MutationObserver).
 - Hover shows a tooltip with the original word (if you *must* know).
 
